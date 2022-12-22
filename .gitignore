@@ -1,7 +1,6 @@
 *.class
 *.log
-.bloop/
-.metals/
+.metals
 project/project/target/
 target/
 project/target/
@@ -9,3 +8,4 @@ project/target/
 .bloop
 .vscode
 target
+
