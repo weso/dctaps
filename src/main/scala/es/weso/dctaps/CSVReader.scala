@@ -26,7 +26,7 @@ object CSVReader {
       ("note", (e: DCTAPElement) => e.withNote.apply),
       ("severity", (e: DCTAPElement) => e.withSeverity.apply),
       ("shapeid", (e: DCTAPElement) => e.withShapeId.apply)
-   )) // (DCTAPElement.empty)
+   ), m) // (DCTAPElement.empty)
 /*   parse("note", m, _.withNote.apply)
    parse("severity", m, _.withSeverity.apply) 
    parse("valueshape", m, _.withValueShape.apply) 
@@ -40,13 +40,13 @@ object CSVReader {
    parse("shapeid", m, _.withShapeId.apply) 
    (DCTAPElement.empty.asRight) */
 
- def parseLs(ls: 
-   List[(String, 
-         DCTAPElement => String => Either[DCTAPError, DCTAPElement])]
+ def parseLs(ls: List[(String, 
+         DCTAPElement => String => Either[DCTAPError, DCTAPElement])],
+         m: Map[String, String]
          ): Either[DCTAPError, DCTAPElement] = 
    ls.foldM(DCTAPElement.empty){ case (current, pair) => {
      val (s, updateFn) = pair
-     updateFn(current)(s)
+     m.get(s).fold(current.asRight)(updateFn(current)(_))
    }}            
 
  def normalizeMap(m: Map[String, String]): Map[String, String] =
