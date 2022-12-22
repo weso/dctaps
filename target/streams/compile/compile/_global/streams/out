@@ -1,0 +1,8 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /home/labra/dctaps/src/main/scala/es/weso/dctaps/CSVReader.scala:15:42 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m        [33mval[0m [36mpipe[0m: [35mPipe[0m[[35mIO[0m, [35mString[0m, [35mRow[0m] = lowlevel.rows[[35mIO[0m,[35mString[0m]  [0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                          ^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m            Found:    fs2.[1m[31mPipe[0m[cats.effect.IO, [1m[31mString[0m[1m[31m,[0m[1m[31m [0mfs2.data.csv.Row][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m            Required: fs2.[1m[32mStream[0m[cats.effect.IO, fs2.data.csv.Row][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

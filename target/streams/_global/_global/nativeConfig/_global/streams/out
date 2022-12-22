@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m'clang' not found in PATH or via 'LLVM_BIN' environment variable.[0m
+[0m[[0m[31merror[0m] [0m[0mPlease refer to (http://www.scala-native.org/en/latest/user/setup.html)[0m
+[0m[[0m[31merror[0m] [0m[0m(Global / [31mnativeConfig[0m) 'clang' not found in PATH or via 'LLVM_BIN' environment variable.[0m
+[0m[[0m[31merror[0m] [0m[0mPlease refer to (http://www.scala-native.org/en/latest/user/setup.html)[0m

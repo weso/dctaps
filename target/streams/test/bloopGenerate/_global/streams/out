@@ -1,0 +1,4 @@
+[debug] [dctaps-test] Classpath dependencies List()
+[debug] [dctaps-test] Dependencies from configurations List(dctaps)
+[debug] Bloop wrote the configuration of project 'dctaps-test' to '/home/labra/dctaps/.bloop/dctaps-test.json'
+[success] Generated .bloop/dctaps-test.json
